@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>German Tech</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!--linkstyle-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--form login-->
+    <div class="login-container">
+      <div class="logo-icon-login">
+        <img src="assets/navbar-logo.png" />
+      </div>  
+      <h1>  </h1>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <br />
+      <div class="btn-lupapass">
+        <p1>Forget Password?</p1>
+      </div>
+      <button onclick="login()">Login</button>
+      <div class="message" id="message"></div>
+    </div>
+    <!--navbar-->
+    <nav class="hidden" id="main-content">
+      <div class="logo-icon">
+        <img src="assets/navbar-logo.png" />
+      </div>
+      <section class="nav-container">
+        <li><a href="#home" class="nav-item" style="vertical-align: middle"><span>Home</span> </a></li>
+        <li><a href="#achievement" class="nav-item" style="vertical-align: middle"><span>About Us</span></a></li>
+        <li><a href="#message-us" class="nav-item" style="vertical-align: middle"><span>Member</span> </a></li>
+        <button class="logout-button" onclick="logout()">Logout</button>
+      </section>
+    </nav>
+
+    <section class="section hidden" id="main-content">
+      <!--home-->
+      <section class="home" id="home">
+        <header>
+          <div>
+            <div class="cover-container">
+                <div class="cover">
+                  <h2>
+                  </h2>
+                  <h2>
+                    Welcome <span id="name"></span>,
+                  </br>
+                    Discover new knowledge about technology every day </br></br>
+                  </h2>
+                  <p class="cover-text">
+                    Technology is the application of scientific knowledge and techniques to solve practical problems 
+                    and improve the quality of life. It includes a wide range of tools, machines, software, and processes 
+                    designed to make tasks easier, increase efficiency, and create innovations.
+                  </br>
+                  </br>
+                </br>
+                    Technology can be found in nearly every aspect of life, from communication and transportation to healthcare and entertainment. 
+                  </br>
+                </br>
+              </br>
+                    Examples include computers, the internet, smartphones, and medical technologies like MRI machines. 
+                  </br></br></br>
+                  </p>
+                  <div class="selengkapnya">
+                    <p1>Baca Selengkapnya</p1>
+                </div>
+                </div>    
+                <div class="cover">
+                  <img class="image-cover" src="assets/cover-potrait.jpg">
+                </div>    
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Image Slider -->
+        <div class="title-autoslide">  
+          <h2>OUR PROJECTS</h2>
+        </div>
+        
+        <div class="slideshow-container">
+        
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/slide1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/slide2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/slide3.jpg" style="width:100%">
+          </div>
+        
+        </div>
+        <br>
+        
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+      <!--About Us-->
+  <section class="achievement" id="achievement">
+    <div class="cover-container">
+      <div class="cover">
+          <h2>   
+            HERE ARE OUR BEST SEVICE FOR YOU </br></br>
+          </h2>
+          <p class="cover-text">
+            1. Customized Design: Web design services can create websites 
+            completely tailored to your needs and vision, 
+            appropriately reflect your brand and goals.
+          </br></br>
+          2. Optimal User Experience: Professional web designers focus on creating the interface 
+          an intuitive and seamless user experience, 
+          ensuring that your website visitors have easy and enjoyable navigation. 
+          </br></br>
+          3. Optimal User Experience: Professional web designers focus on creating the interface 
+          an intuitive and seamless user experience, ensuring that your website visitors 
+          has easy and enjoyable navigation. 
+          </br>
+          </p>
+        </div>     
+      </div>
+    </div>
+  </div>
+  </section>
+
+      <section class="section">
+        <section class="achievement1" id="achievement1">
+          <div class="achievement-list">
+            <div class="container-achievement">
+              <div class="achievement-img1">
+                <h4>1000+ Customers Every Year</h4>
+                <img src="assets/imgabout1.jpg" />
+              </div>
+            </div>
+            <div class="container-achievement">
+              <div class="achievement-img2">
+                <h4>Fast Response Between Providers and Customers</h4>
+                <img src="assets/imgabout2.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!--Message us-->
+      <section class="message-us" id="message-us">
+        <header>
+          <h2 style="text-align: center">Memeber List</h2>
+        </header>
+        <section class="message-section">
+          <!--Form-->
+          <section class="form-container">
+            <form id="formulir">
+              <div class="form-group">
+                <label for="nama" class="">Name : </label>
+                <input
+                  type="text"
+                  id="nama"
+                  nama="nama"
+                  placeholder="Nama anda"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="tgl-lahir" class="">Date of Birth</label>
+                <input type="date" id="tgl-lahir" name="tgl-lahir" />
+              </div>
+              <div class="form-group">
+                <label>Gender : </label>
+                <input
+                  type="radio"
+                  id="lakilaki"
+                  name="jenisKelamin"
+                  value="Laki-laki"
+                  required
+                />
+                <label for="lakilaki">Men</label>
+                <input
+                  type="radio"
+                  id="lakilaki"
+                  name="jenisKelamin"
+                  value="Perempuan"
+                  required
+                />
+                <label for="lakilaki">Woman</label>
+              </div>
+              <div class="form-group">
+                <label for="pesan">Pesan : </label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+              </div>
+              <button class="btn-form" type="submit" id="submit">Submit</button>
+            </form>
+
+          </section>
+          <!--Result-->
+          <section class="result-container">
+            <div class="form-result">
+              <textarea id="result" rows="15" cols="20" readonly></textarea>
+            </div>
+          </section>
+
+        </section>
+      </section>
+      <!--End Message-->
+    </section>
+    
+    <section class="footer-container">
+    <footer class="footer hidden" id="main-content">
+      <p style="text-align: center">©2024 by gericaldrm</p>
+      <!-- Icon Sosmed -->
+      <div class="sosmed">
+        <a
+        href="https://www.linkedin.com/"
+        target="_blank">
+        <img src="assets/linkedin_logob.png" alt="linkedin" />
+        </a>
+        <a href="https://web.facebook.com/" target="_blank">
+          <img src="assets/facebook_logob.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="assets/instagram_logob.png" alt="Instagram" />
+        </a>
+        <a href="www.tiktok.com/" target="_blank">
+          <img src="assets/tiktok_logob.png" alt="Tiktok" />
+        </a>
+      </div>
+    </footer>
+  </section>
+    
+<!--dijadikan button chat untuk sementara, nanti akan disempurnakan-->
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+      class="hidden"
+      id="main-content">
+      <img src="assets/logo chat.png" />
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
